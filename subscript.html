@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online education subscription page</title>
+    <link rel="stylesheet" href="CSS/edu.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    
+
+<header>
+    
+    
+    <div class="header1">
+        <div class="head1">
+            <img src="image/logo.png" alt="image">
+            <p>Creative Learn</p>
+        </div>
+        <div class="head2">
+            <div class="head21">
+                <input type="search" placeholder="Search product">
+                <i class="bi bi-search"></i>
+            </div>
+            <div class="head22">
+                <a href="home.html" >Home  <span></span></a>
+                <a href="course.html">Courses <span></span></a>
+                <a href="cate.html">Categories <span></span></a>
+                <a href="subscript.html"class="active">Subscriptions <span></span></a>
+                <a href="blog.html">Blogs <span></span></a>
+                <a href="contact.html">Contact us <span></span></a>
+                <a href="about.html">About us <span></span></a>
+            </div>
+        </div>
+
+
+    <div class="head3">
+        <div class="head31">
+          <a href="#head31"><img src="image/logo2.png" alt="image"></a>
+         
+            <div class="head31in" id="head31">
+              <h3>My Accounts</h3>
+             <a href="#"><i class="bi bi-x"></i></a>              
+             <a href="perinf.html">Personal Information</a>
+              <a href="mycou.html">My Course</a>
+              <a href="mycer.html">My Certificate</a>
+              <a href="password.html">Password Manager</a>
+              <a href="logout.html">Logout</a>
+            </div>
+        </div>
+        <div class="headht">
+        <a href="heart.html"><i class="bi bi-heart" ></i></a>
+        </div>
+<div class="headbel">
+               <a href="#bel"><i class="bi bi-bell fs-3 text-warning"style="color:black; font-weight:bold; "></i></a>
+
+               <div class="bell" id="bel">
+                  <a href="#"><i class="bi bi-x" style=" font-size:2rem;"></i></a>
+                  <h4>Course Notification Messages</h4>
+                  <p>1.New Course Available</p>
+                  <p>New Course Alert!</p>
+                  <p>Advanced UI/UX Design Techniques" is now live. Start learning the latest in design systems and user flows today.</p>
+               </div>
+
+                </div>    </div>
+
+</div>
+
+
+
+</header>
+
+
+
+
+
+<!--subscription-->
+
+
+
+<section class="subscript">
+    <div class="subsc">
+    <h2>Unlock Your Learning Potential</h2>
+    <p>Choose the right plan to match your learning journey. Whether you're exploring new skills, leveling up <br> your career, or learning as a team — we've got a plan for you.</p>
+    </div>
+    <div class="subs">
+        <div class="subs1">
+            <img src="image/home2.png" alt="image">
+            <div class="subsin">
+                <h3>Free Plan</h3>
+                <h4>Rupees 0/Month</h4>
+                <p>Access to free courses</p>
+                <p> Full Content library </p>
+                <p>Community Support</p>
+                <button>Get Started</button>
+            </div>
+        </div>
+        <div class="subs1">
+            <img src="image/sub2.png" alt="image">
+            <div class="subsin">
+                <h3>Standard Plan</h3>
+                <h4>Rupees 2500/Month</h4>
+                <p>Access to free courses</p>
+                <p> Full Content library </p>
+                <p>Community Support</p>
+                <a href="#hidepay2">Subscribe</a>
+            </div>
+        </div>
+        <div class="subs1">
+            <img src="image/sub3.png" alt="image">
+            <div class="subsin">
+                <h3>Premium Plan</h3>
+                <h4>Rupees 2500/Month</h4>
+                <p>Access to free courses</p>
+                <p> Full Content library </p>
+                <p>Community Support</p>
+                <a href="#">Subscribe</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+<div class="hidepay2" id="hidepay2">
+    <h3>Payment Options</h3>
+    <h4>UPI PAYMENT:</h4>
+    <div class="pay2in">
+        <img src="image/googlepay.jpg" alt="image">
+        <img src="image/phonepe.jpg" alt="image">
+        <img src="image/paypal.webp" alt="image">
+    </div>
+    <a href="#hidepay3">Enter a Details</a>
+</div>
+
+
+<div class="hidepay3" id="hidepay3">
+    <h2>Payment UPI Details</h2>
+    <label for="">Enter Name:</label><br>
+    <input type="text"><br>
+    <label for="">Enter UPI ID:</label><br>
+    <input type="text"><br>
+
+    <button id="btn">Confirm Payment</button>
+    
+</div>
+
+
+
+
+
+
+<script>
+    document.getElementById("btn").addEventListener("click",function(){
+      const mes = document.getElementById("hidepay3");
+      mes.innerHTML= ` <span class="tick">&#10003;</span> <br>Payment Successfully Done! <br> Subscription Updated`;
+      mes.style.fontSize = "30px";
+      mes.style.width = "500px";
+    mes.style.height ="200px";
+    mes.style.textAlign = "center";
+    mes.style.display = "flex";
+mes.style.flexDirection = "column";
+mes.style.justifyContent = "center";
+mes.style.alignItems = "center";   
+ 
+
+      setTimeout(() =>{
+        window.location.href = "cate2.html"
+      },1500);
+     
+    });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+<!--footer section-->
+ <footer>
+  <div class="footer">
+                <div class="foot1">
+                    <img src="image/logo.png" alt="image">
+                    <p>Creative learn</p>
+                </div>
+                <div class="foot2">
+                    <h3>About Us</h3>
+                    <li>WHO WE ARE</li>
+                    <li>OUR MISSION</li>
+                    <li>HOW IT WORKS</li>
+                    <li>SUCCESS</li>
+                    <li>COURSES</li>
+                </div>
+                <div class="foot3">
+                    <h3>QUICK LINKS</h3>
+                    <li>Browse</li>
+                    <li>Packages</li>
+                    <li>Categories</li>
+                    <li>Support</li>
+                    <li>Blog</li>
+                </div>
+                <div class="foot3">
+                    <h3>Feature</h3>
+                    <li>Designs</li>
+                    <li>Full Stack</li>
+                    <li>Web app</li>
+                    <li>Marketing</li>
+                </div>
+                <div class="foot4">
+                   <h3>Contact & Social</h3>
+                    <p>123 saik Street, Chennai, TN</p> 
+                    <p>+91 - 7867980-688</p>
+                <p>learn@creativelearn.com</p>
+                </div>
+                <div class="foot5">
+                    <img src="image/foot.jpg" alt="image">
+                </div>
+            </div>
+
+            <div class="foot">
+                <div> <p>&copy; 2025 Creative learns. All rights reserved.</p>
+                <p>Terms & Conditions | Privacy Policy</p></div>
+            <div class="footlast">
+              <h4>Follow Us:</h4>
+              <div class="footlastin">
+              <p><i class="fab fa-youtube"style="font-size: 28px;"></i>&nbsp;&nbsp; 
+                <i class="fab fa-google"style="font-size: 28px;"></i>&nbsp;&nbsp; 
+                <i class="fab fa-facebook-f"style="font-size: 28px;"></i>&nbsp;&nbsp; 
+                <i class="bi bi-twitter text-info fs-3"style="font-size: 28px;"></i></p>
+            </div>
+            </div></div>
+        
+
+ </footer>
+</body>
+</html>
